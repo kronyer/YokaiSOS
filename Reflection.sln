@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{A01BE121-105C-4D24-A6A7-1F8E3059C23A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Hello", "Plugin.Hello\Plugin.Hello.csproj", "{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A01BE121-105C-4D24-A6A7-1F8E3059C23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01BE121-105C-4D24-A6A7-1F8E3059C23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01BE121-105C-4D24-A6A7-1F8E3059C23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01BE121-105C-4D24-A6A7-1F8E3059C23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

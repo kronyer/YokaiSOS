@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kronyer/RiderProjects/Reflection/Plugin.Hello/Plugin.Hello.csproj": {}
+  },
+  "projects": {
+    "/home/kronyer/RiderProjects/Reflection/Plugin.Hello/Plugin.Hello.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kronyer/RiderProjects/Reflection/Plugin.Hello/Plugin.Hello.csproj",
+        "projectName": "Plugin.Hello",
+        "projectPath": "/home/kronyer/RiderProjects/Reflection/Plugin.Hello/Plugin.Hello.csproj",
+        "packagesPath": "/home/kronyer/.nuget/packages/",
+        "outputPath": "/home/kronyer/RiderProjects/Reflection/Plugin.Hello/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kronyer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj": {
+                "projectPath": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj",
+        "projectName": "Reflection",
+        "projectPath": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj",
+        "packagesPath": "/home/kronyer/.nuget/packages/",
+        "outputPath": "/home/kronyer/RiderProjects/Reflection/Reflection/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kronyer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
