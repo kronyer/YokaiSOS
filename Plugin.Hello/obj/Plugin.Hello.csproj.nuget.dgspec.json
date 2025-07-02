@@ -27,8 +27,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj": {
-                "projectPath": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj"
+              "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj": {
+                "projectPath": "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj": {
+    "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj",
-        "projectName": "Reflection",
-        "projectPath": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj",
+        "projectUniqueName": "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj",
+        "projectName": "YokaiSOS.Core",
+        "projectPath": "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj",
         "packagesPath": "/home/kronyer/.nuget/packages/",
-        "outputPath": "/home/kronyer/RiderProjects/Reflection/Reflection/obj/",
+        "outputPath": "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kronyer/.nuget/NuGet/NuGet.Config"

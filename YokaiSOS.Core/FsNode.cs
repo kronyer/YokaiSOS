@@ -1,4 +1,4 @@
-namespace Reflection;
+namespace YokaiSOS.Core;
 
 public abstract class FsNode
 {

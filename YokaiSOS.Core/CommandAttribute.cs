@@ -1,4 +1,4 @@
-namespace Reflection;
+namespace YokaiSOS.Core;
 
 [AttributeUsage(AttributeTargets.Method)]
 public class CommandAttribute : Attribute

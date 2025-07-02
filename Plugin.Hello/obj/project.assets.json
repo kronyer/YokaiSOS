@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Reflection/1.0.0": {
+      "YokaiSOS.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/Reflection.dll": {}
+          "bin/placeholder/YokaiSOS.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Reflection.dll": {}
+          "bin/placeholder/YokaiSOS.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Reflection/1.0.0": {
+    "YokaiSOS.Core/1.0.0": {
       "type": "project",
-      "path": "../Reflection/Reflection.csproj",
-      "msbuildProject": "../Reflection/Reflection.csproj"
+      "path": "../YokaiSOS.Core/YokaiSOS.Core.csproj",
+      "msbuildProject": "../YokaiSOS.Core/YokaiSOS.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Reflection >= 1.0.0"
+      "YokaiSOS.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -52,8 +52,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj": {
-              "projectPath": "/home/kronyer/RiderProjects/Reflection/Reflection/Reflection.csproj"
+            "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj": {
+              "projectPath": "/home/kronyer/RiderProjects/Reflection/YokaiSOS.Core/YokaiSOS.Core.csproj"
             }
           }
         }

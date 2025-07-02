@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Reflection;
+namespace YokaiSOS.Core;
 
 public class CliApp
 {

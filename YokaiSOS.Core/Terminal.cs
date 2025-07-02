@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Reflection;
+namespace YokaiSOS.Core;
 
 using System;
 

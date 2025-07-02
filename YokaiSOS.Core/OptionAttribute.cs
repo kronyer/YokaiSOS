@@ -1,4 +1,4 @@
-namespace Reflection;
+namespace YokaiSOS.Core;
 [AttributeUsage(AttributeTargets.Parameter)]
 public class OptionAttribute : Attribute
 {
