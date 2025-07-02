@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Reflection;
+﻿using Reflection;
 
 
 var vfs = new VirtualFileSystem();

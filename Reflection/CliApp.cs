@@ -15,19 +15,19 @@ public class CliApp
 
     public void Run(string[] args)
     {
-        LoadHandlers(); // <-- adiciona aqui
+        LoadHandlers();
         
         if (args.Length == 0)
         {
-            PrintHelp(); // geral
+            PrintHelp(); 
             return;
         }
 
-        if (args[0] == "--help" || args[0] == "-h")
+        if (args[0] == "help" || args[0] == "-h")
         {
             if (args.Length == 1)
             {
-                PrintHelp(); // geral
+                PrintHelp(); 
             }
             else
             {
@@ -55,7 +55,7 @@ public class CliApp
 
         if (method == null)
         {
-            Console.WriteLine($"Comando '{commandName}' não encontrado.");
+            Console.WriteLine($"Command '{commandName}' not found.");
             return;
         }
         
@@ -149,7 +149,7 @@ public class CliApp
             }
         }
 
-        Console.WriteLine($"Comando '{name}' não encontrado.");
+        Console.WriteLine($"Command '{name}' not found.");
     }
 
     
@@ -181,7 +181,6 @@ public class CliApp
         {
             return $"{handlerWithVfs.GetPrompt()} $";
         }
-
         return "$";
     }
 

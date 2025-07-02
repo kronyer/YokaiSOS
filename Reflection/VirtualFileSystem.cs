@@ -10,7 +10,6 @@ public class VirtualFileSystem
         Root = new DirectoryNode { Name = "/" };
         Current = Root;
 
-        // Estrutura padrão
         var home = new DirectoryNode { Name = "home" };
         var bin = new DirectoryNode { Name = "bin" };
         var etc = new DirectoryNode { Name = "etc" };
@@ -23,7 +22,6 @@ public class VirtualFileSystem
         Root.AddChild(tmp);
         home.AddChild(user);
 
-        // Setar home do usuário como diretório inicial
         Current = user;
     }
 
@@ -44,7 +42,7 @@ public class VirtualFileSystem
 
         var target = Current.GetChild(name) as DirectoryNode;
         if (target == null)
-            throw new Exception($"Diretório '{name}' não encontrado.");
+            throw new Exception($"Directory '{name}' not found.");
 
         Current = target;
     }
@@ -52,7 +50,7 @@ public class VirtualFileSystem
     public void MakeDirectory(string name)
     {
         if (Current.GetChild(name) != null)
-            throw new Exception($"'{name}' já existe.");
+            throw new Exception($"'{name}' already exists.");
 
         var dir = new DirectoryNode { Name = name };
         Current.AddChild(dir);
@@ -61,10 +59,48 @@ public class VirtualFileSystem
     public void CreateFile(string name, string content = "")
     {
         if (Current.GetChild(name) != null)
-            throw new Exception($"'{name}' já existe.");
+            throw new Exception($"'{name}' already exists.");
 
         var file = new FileNode { Name = name, Content = content };
         Current.AddChild(file);
+    }
+    
+    public void Remove(string name, bool recursive = false, bool force = false)
+    {
+        var node = Current.GetChild(name);
+
+        if (node == null)
+        {
+            if (force)
+                return;
+            throw new Exception($"'{name}' not found.");
+        }
+
+        if (node is DirectoryNode dir)
+        {
+            if (!recursive && dir.Children.Any())
+                throw new Exception($"Directory '{name}' is not empty, use -r to remove recursively.");
+
+            foreach (var child in dir.Children.ToList())
+            {
+                var prev = Current;
+                Current = dir;
+                Remove(child.Name, recursive, force);
+                Current = prev;
+            }
+        }
+
+        Current.RemoveChild(node);
+    }
+    
+    public FileNode? ResolveFile(string name)
+    {
+        return Current.GetChild(name) as FileNode;
+    }
+
+    public FsNode? ResolveNode(string name)
+    {
+        return Current.GetChild(name); 
     }
 
     public IEnumerable<FsNode> List() => Current.Children;

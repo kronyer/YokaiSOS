@@ -9,10 +9,10 @@ public class CommandHandler
         _vfs = vfs;
     }
     
-    [Command("touch", Description = "Cria um arquivo vazio")]
+    [Command("touch", Description = "Creates an empty file")]
     public void Touch(
-        [Option("name")] [ParamDescription("Nome do arquivo")] string name,
-        [Option("content")] [ParamDescription("Conteúdo opcional")] string content = "")
+        [Option("name")] [ParamDescription("Name of the file")] string name,
+        [Option("content")] [ParamDescription("Optional content")] string content = "")
     {
         try
         {
@@ -23,15 +23,14 @@ public class CommandHandler
             }
 
             _vfs.CreateFile(name, content);
-            Console.WriteLine($"Arquivo '{name}' criado.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Erro: {ex.Message}");
+            Console.WriteLine($"Error creating the '{name}' file: {ex.Message}");
         }
     }
     
-    [Command("ls", Description = "Lista arquivos e diretórios")]
+    [Command("ls", Description = "Lists the files and directories in the current directory")]
     public void Ls()
     {
         var itens = _vfs.List();
@@ -43,8 +42,8 @@ public class CommandHandler
         }
     }
     
-    [Command("cd", Description = "Altera o diretório atual")]
-    public void Cd([ParamDescription("Nome do diretório ou '/' para raiz")] string nome)
+    [Command("cd", Description = "Change the current directory")]
+    public void Cd([ParamDescription("Name of directory or '/' to root")] string nome)
     {
         try
         {
@@ -58,17 +57,16 @@ public class CommandHandler
 
 
     
-    [Command("mkdir", Description = "Cria um diretório")]
+    [Command("mkdir", Description = "Creates a directory")]
     public void Mkdir([ParamDescription("Nome do diretório")] string name)
     {
         try
         {
             _vfs.MakeDirectory(name);
-            Console.WriteLine($"Diretório '{name}' criado.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Erro: {ex.Message}");
+            Console.WriteLine($"Error creating '{name}': {ex.Message}");
         }
     }
     
@@ -89,5 +87,33 @@ public class CommandHandler
     {
         return _vfs.PrintWorkingDirectory();
     }
+    
+    [Command("cat", Description = "Displays the content of a file")]
+    public void Cat(string name)
+    {
+        var file = _vfs.ResolveFile(name);
+        if (file == null)
+        {
+            Console.WriteLine($"File '{name}' not found.");
+            return;
+        }
+
+        Console.WriteLine(file.Content);
+    }
+    
+    [Command("rm", Description = "Remove a file or empty directory")]
+    public void Rm(string name, [Option("r")] bool recursive = false, [Option("f")] bool force = false)
+    {
+        try
+        {
+            _vfs.Remove(name, recursive, force);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error on removing '{name}': {ex.Message}");
+        }
+    }
+
+
 
 }

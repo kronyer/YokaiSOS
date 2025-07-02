@@ -15,8 +15,7 @@ public class Terminal
 
     public void Start()
     {
-        Console.WriteLine("🔹 Sistema interativo iniciado. Digite 'exit' para sair.");
-
+        ShowBootArt();
         while (true)
         {
             Console.Write($"{_cli.GetPrompt()} ");
@@ -39,12 +38,13 @@ public class Terminal
             }
         }
 
-        Console.WriteLine("Sistema encerrado.");
+        Console.WriteLine("I'm watching you...");
     }
 
+    
+    
     private static string[] ParseInput(string input)
     {
-        // divide por espaço mas respeita aspas
         var tokens = new List<string>();
         var current = new StringBuilder();
         bool inQuotes = false;
@@ -76,4 +76,23 @@ public class Terminal
 
         return tokens.ToArray();
     }
+    
+    private void ShowBootArt()
+    {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+        Console.WriteLine("▁▂▃▄▅▆▇█ YOKAI SOS █▇▆▅▄▃▂▁");
+        Console.WriteLine(" Simulated Operational System");
+        Console.WriteLine(" ────────────────");
+        Console.WriteLine("  無 • 靈 • 情 • 操 • 幻 • 魂");
+        Console.WriteLine(" ────────────────");
+        Console.WriteLine(" 'Everything is virtual.");
+        Console.WriteLine("  Nothing touches the host.");
+        Console.WriteLine("  But everything responds.'");
+        Console.WriteLine();
+        Console.WriteLine(" Type `help` to begin.");
+        Console.WriteLine(" Type `summon` to awaken forgotten things.");
+        Console.WriteLine();
+    }
+
 }
