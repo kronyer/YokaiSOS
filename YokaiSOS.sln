@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokaiSOS.Core", "YokaiSOS.Core\YokaiSOS.Core.csproj", "{A01BE121-105C-4D24-A6A7-1F8E3059C23A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Hello", "Plugin.Hello\Plugin.Hello.csproj", "{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokaiSOS.Plugin.Hello", "YokaiSOS.Plugin.Hello\YokaiSOS.Plugin.Hello.csproj", "{6C46CA8A-0F26-4B42-AD9F-D68C858714ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

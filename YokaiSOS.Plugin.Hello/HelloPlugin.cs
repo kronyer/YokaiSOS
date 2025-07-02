@@ -1,6 +1,6 @@
 using YokaiSOS.Core;
 
-namespace Plugin.Hello;
+namespace YokaiSOS.Plugin.Hello;
 
 public class HelloPlugin : IPluginCommandHandler
 {

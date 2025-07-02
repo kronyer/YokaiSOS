@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="975bcff1-a3b5-4243-a82a-988f2218f79a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin.Hello/obj/Debug/net9.0/Plugin.Hello.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflection/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reflection/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflection/CommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reflection/CommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflection/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reflection/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflection/Terminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reflection/Terminal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflection/VirtualFileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reflection/VirtualFileSystem.cs" afterDir="false" />
-    </list>
+    <list default="true" id="975bcff1-a3b5-4243-a82a-988f2218f79a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,22 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Reflection.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/kronyer/RiderProjects/Reflection",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Reflection.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kronyer/RiderProjects/Reflection&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Reflection" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -90,7 +81,7 @@
       <updated>1751331767625</updated>
       <workItem from="1751331768418" duration="1901000" />
       <workItem from="1751407601544" duration="11176000" />
-      <workItem from="1751493423449" duration="2296000" />
+      <workItem from="1751493423449" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial implementation of CLI application with command handling and virtual file system">
       <option name="closed" value="true" />
@@ -100,7 +91,39 @@
       <option name="project" value="LOCAL" />
       <updated>1751419794789</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor command descriptions and error messages to English; add 'cat' and 'rm' commands to CLI">
+      <option name="closed" value="true" />
+      <created>1751495734496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751495734496</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Rename Reflection namespace to YokaiSOS.Core and update project references">
+      <option name="closed" value="true" />
+      <created>1751496031566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751496031566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add README.md with project overview, features, and setup instructions">
+      <option name="closed" value="true" />
+      <created>1751496046609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751496046609</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add initial project configuration files and .gitignore">
+      <option name="closed" value="true" />
+      <created>1751496054842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751496054842</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +134,11 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add initial implementation of CLI application with command handling and virtual file system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial implementation of CLI application with command handling and virtual file system" />
+    <MESSAGE value="Refactor command descriptions and error messages to English; add 'cat' and 'rm' commands to CLI" />
+    <MESSAGE value="Rename Reflection namespace to YokaiSOS.Core and update project references" />
+    <MESSAGE value="Add README.md with project overview, features, and setup instructions" />
+    <MESSAGE value="Add initial project configuration files and .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project configuration files and .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
